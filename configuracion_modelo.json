@@ -1,0 +1,165 @@
+{
+  "modelo": "XGBoost",
+  "umbral": 0.5,
+  "numericas": [
+    "lead_time",
+    "adr",
+    "total_noches",
+    "total_huespedes",
+    "mes_llegada",
+    "previous_cancellations",
+    "previous_bookings_not_canceled",
+    "booking_changes",
+    "days_in_waiting_list",
+    "required_car_parking_spaces",
+    "total_of_special_requests"
+  ],
+  "binarias": [
+    "is_repeated_guest",
+    "tiene_agente",
+    "tiene_empresa",
+    "tiene_ninos",
+    "cancelo_antes"
+  ],
+  "categoricas": [
+    "hotel",
+    "meal",
+    "market_segment",
+    "distribution_channel",
+    "reserved_room_type",
+    "deposit_type",
+    "customer_type",
+    "pais"
+  ],
+  "opciones": {
+    "hotel": [
+      "City Hotel",
+      "Resort Hotel"
+    ],
+    "meal": [
+      "BB",
+      "FB",
+      "HB",
+      "SC"
+    ],
+    "market_segment": [
+      "Aviation",
+      "Complementary",
+      "Corporate",
+      "Direct",
+      "Groups",
+      "Offline TA/TO",
+      "Online TA"
+    ],
+    "distribution_channel": [
+      "Corporate",
+      "Direct",
+      "GDS",
+      "TA/TO"
+    ],
+    "reserved_room_type": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "L"
+    ],
+    "deposit_type": [
+      "No Deposit",
+      "Non Refund",
+      "Refundable"
+    ],
+    "customer_type": [
+      "Contract",
+      "Group",
+      "Transient",
+      "Transient-Party"
+    ],
+    "pais": [
+      "BEL",
+      "BRA",
+      "DEU",
+      "ESP",
+      "FRA",
+      "GBR",
+      "IRL",
+      "ITA",
+      "NLD",
+      "Otros",
+      "PRT"
+    ]
+  },
+  "rangos": {
+    "lead_time": {
+      "min": 0.0,
+      "mediana": 50.0,
+      "max": 737.0
+    },
+    "adr": {
+      "min": 0.0,
+      "mediana": 98.5,
+      "max": 510.0
+    },
+    "total_noches": {
+      "min": 0.0,
+      "mediana": 3.0,
+      "max": 60.0
+    },
+    "total_huespedes": {
+      "min": 1.0,
+      "mediana": 2.0,
+      "max": 50.0
+    },
+    "mes_llegada": {
+      "min": 1.0,
+      "mediana": 7.0,
+      "max": 12.0
+    },
+    "previous_cancellations": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 26.0
+    },
+    "previous_bookings_not_canceled": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 69.0
+    },
+    "booking_changes": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 17.0
+    },
+    "days_in_waiting_list": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 391.0
+    },
+    "required_car_parking_spaces": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 8.0
+    },
+    "total_of_special_requests": {
+      "min": 0.0,
+      "mediana": 0.0,
+      "max": 5.0
+    }
+  },
+  "metricas_prueba": {
+    "Accuracy": 0.822,
+    "Precision": 0.646,
+    "Recall": 0.784,
+    "F1": 0.708,
+    "AUC-ROC": 0.899
+  },
+  "versiones": {
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "pandas": "2.2.3"
+  }
+}
