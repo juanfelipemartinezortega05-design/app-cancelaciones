@@ -7,6 +7,14 @@ Es la fase de despliegue (Fase 6) de un proyecto de analítica de datos desarrol
 - **Datos:** Hotel Booking Demand (Antonio, Almeida y Nunes, 2019), reservas de dos hoteles en Portugal entre 2015 y 2017.
 - **Desempeño en datos de prueba:** AUC-ROC 0,899 · Recall 0,784 · Precision 0,646 · F1 0,708.
 
+## Funciones de la aplicación
+
+- **Simulador en tiempo real:** el riesgo se actualiza al instante al modificar cualquier dato de la reserva, con ejemplos rápidos de riesgo alto, medio y bajo.
+- **¿Qué cambiaría el riesgo?:** muestra cómo cambiaría la probabilidad si se modificara un solo dato (parqueadero, solicitudes, canal, depósito, anticipación).
+- **Curva de anticipación:** riesgo de la reserva para distintos días de anticipación.
+- **Evaluación de varias reservas:** carga de un archivo CSV y descarga de resultados.
+- **Cómo decide el modelo:** variables más importantes y niveles de riesgo.
+
 ## Archivos
 
 | Archivo | Contenido |
