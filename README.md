@@ -9,11 +9,9 @@ Es la fase de despliegue (Fase 6) de un proyecto de analítica de datos desarrol
 
 ## Funciones de la aplicación
 
-- **Simulador en tiempo real:** el riesgo se actualiza al instante al modificar cualquier dato de la reserva, con ejemplos rápidos de riesgo alto, medio y bajo.
-- **¿Qué cambiaría el riesgo?:** muestra cómo cambiaría la probabilidad si se modificara un solo dato (parqueadero, solicitudes, canal, depósito, anticipación).
-- **Curva de anticipación:** riesgo de la reserva para distintos días de anticipación.
-- **Evaluación de varias reservas:** carga de un archivo CSV y descarga de resultados.
-- **Cómo decide el modelo:** variables más importantes y niveles de riesgo.
+- **Evaluar una reserva:** formulario organizado en tres pasos (datos de la reserva, huéspedes y solicitudes, canal de venta y cliente). Al presionar *Calcular riesgo de cancelación* muestra la probabilidad, el nivel de riesgo, la acción recomendada y qué cambios reducirían el riesgo.
+- **Evaluar varias reservas:** permite descargar una plantilla de Excel con listas desplegables, diligenciarla con todas las reservas del día y subirla para calcular el riesgo de todas a la vez. Los resultados se descargan en Excel, coloreados por nivel de riesgo.
+- **Sobre el modelo:** métricas del modelo con datos de prueba, variables más importantes y significado de cada nivel de riesgo.
 
 ## Archivos
 
